@@ -38,6 +38,9 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     testImplementation 'junit:junit:4.+'
+    implementation ('com.qcloud.cos:cos-android:5.9.+'){
+        exclude group: 'com.tencent.qcloud', module: 'beacon-android-release'
+    }
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
